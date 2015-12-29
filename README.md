@@ -1,6 +1,8 @@
 # youzan ![](https://travis-ci.org/frankwaizi/youzan.svg?branch=master)
 
 nodejs sdk for www.youzan.com (koudaitong)
+This is a fork of https://github.com/frankwaizi/youzan.git to fix the long post
+request 414 problem
 
 ## 功能列表
 - 商品接口

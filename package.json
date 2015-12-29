@@ -1,12 +1,12 @@
 {
-  "name": "youzan",
-  "version": "0.1.1",
+  "name": "deo-youzan",
+  "version": "0.1.2",
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "dependencies": {
     "request": "*",
     "moment": "*",
-    "lodash": "*",
+    "lodash": "^3.0.0",
     "utf8" : "*"
   },
   "devDependencies": {
@@ -32,6 +32,10 @@
     {
       "name": "frank fan",
       "email": "frankwaizi2008@gmail.com"
+    },
+    {
+      "name": "Deo Leung",
+      "email": "liangzhanzhao1985@gmail.com"
     }
   ],
   "license": "MIT",
