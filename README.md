@@ -1,6 +1,4 @@
 nodejs sdk for www.youzan.com (koudaitong)
-This is a fork of https://github.com/frankwaizi/youzan.git to fix the long post
-request 414 problem
 
 This is inspired by [Frank Fan](https://github.com/frankwaizi/youzan)'s work but now it's been revamped
 
