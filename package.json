@@ -4,10 +4,9 @@
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "dependencies": {
-    "request": "*",
-    "moment": "*",
-    "lodash": "^3.0.0",
-    "utf8": "*"
+    "moment": "^2.11.1",
+    "object-path": "^0.9.2",
+    "request": "^2.67.0"
   },
   "devDependencies": {
     "grunt": "*",
@@ -18,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/frankwaizi/youzan.git"
+    "url": "https://github.com/DeoLeung/youzan.git"
   },
   "keywords": [
     "youzan",
@@ -27,20 +26,20 @@
     "有赞",
     "口袋通"
   ],
-  "author": "frank fan",
+  "author": "Deo Leung",
   "maintainers": [
-    {
-      "name": "frank fan",
-      "email": "frankwaizi2008@gmail.com"
-    },
     {
       "name": "Deo Leung",
       "email": "liangzhanzhao1985@gmail.com"
+    },
+    {
+      "name": "frank fan",
+      "email": "frankwaizi2008@gmail.com"
     }
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/frankwaizi/youzan/issues"
+    "url": "https://github.com/DeoLeung/youzan/issues"
   },
-  "homepage": "https://github.com/frankwaizi/youzan"
+  "homepage": "https://github.com/DeoLeung/youzan"
 }
