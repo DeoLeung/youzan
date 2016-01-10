@@ -8,7 +8,7 @@ It's not compatible with v0.1.4 and below, please update your code where necessa
 
 ## APIs
 
-详细参见[有赞API文档](http://open.koudaitong.com/doc)
+See [有赞API文档](http://open.koudaitong.com/doc)
 
 ## Installation
 
@@ -26,7 +26,7 @@ var request = require('request');
 request = request.defaults({proxy: 'your proxy'});
 
 // Get an api object for a certain appid/appsecret
-var kdt = youzan(proxy, appid, appsecret);
+var kdt = youzan(appid, appsecret);
 
 // Normally you can use it as the api 'method' in the API doc
 // e.g. method: kdt.trades.sold.get
