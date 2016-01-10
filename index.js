@@ -86,12 +86,18 @@ let kdt = function (
     },
 
     // General get/post function to query kdt api directly with complete control
-    get: function(method, apiParams, callback) {
+    get: function (method, apiParams, callback) {
       return util.get(config.config, method, apiParams, callback);
     },
 
-    post: function(method, apiParams, filePaths, filekey, callback) {
-      return util.post(config.config, method, apiParams, filePaths, filekey, callback);
+    post: function (method, apiParams, filePaths, filekey, callback) {
+      return util.post(
+        config.config,
+        method,
+        apiParams,
+        filePaths,
+        filekey,
+        callback);
     }
   }
 
@@ -100,7 +106,7 @@ let kdt = function (
     objectPath.set(
       config,
       method.replace('kdt.', ''),
-      function(apiParams, callback) {
+      function (apiParams, callback) {
         return util.get(config.config, method, apiParams, callback);
       });
   });
@@ -109,8 +115,14 @@ let kdt = function (
     objectPath.set(
       config,
       method.replace('kdt.', ''),
-      function(apiParams, callback) {
-        return util.post(config.config, method, apiParams, null, null, callback);
+      function (apiParams, callback) {
+        return util.post(
+          config.config,
+          method,
+          apiParams,
+          null,
+          null,
+          callback);
       });
   });
 
@@ -118,8 +130,14 @@ let kdt = function (
     objectPath.set(
       config,
       method.replace('kdt.', ''),
-      function(apiParams, filePaths, callback) {
-        return util.post(config.config, method, apiParams, filePaths, 'images[]', callback);
+      function (apiParams, filePaths, callback) {
+        return util.post(
+          config.config,
+          method,
+          apiParams,
+          filePaths,
+          'images[]',
+          callback);
       });
   });
   return config;
