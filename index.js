@@ -53,7 +53,9 @@ let api = {
     // 卖家关闭一笔交易：<http://open.koudaitong.com/doc/api?method=kdt.trade.close>
     'kdt.trade.close',
     // 修改一笔交易备注：<http://open.koudaitong.com/doc/api?method=kdt.trade.memo.update>
-    'kdt.trade.memo.update'
+    'kdt.trade.memo.update',
+    // 根据微信粉丝用户的 openid 或 user_id 绑定对应的标签: <http://open.koudaitong.com/doc/api?method=kdt.users.weixin.follower.tags.add>
+    'kdt.users.weixin.follower.tags.add'
   ],
   postImages: [
     // 新增一个商品：<http://open.koudaitong.com/doc/api?method=kdt.item.add>
@@ -99,7 +101,7 @@ let kdt = function (
         filekey,
         callback);
     }
-  }
+  };
 
   // Dynamic helper functions to simplify the call
   api.get.forEach(function (method) {
@@ -141,6 +143,6 @@ let kdt = function (
       });
   });
   return config;
-}
+};
 
 module.exports = kdt;

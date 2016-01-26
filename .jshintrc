@@ -1,4 +1,6 @@
 {
+  "esversion": 6,
+  "strict": "global",
   "curly": true,
   "eqeqeq": true,
   "immed": true,
