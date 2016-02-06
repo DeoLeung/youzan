@@ -62,7 +62,8 @@ let api = {
     'kdt.item.add',
     // 更新单个商品信息：<http://open.koudaitong.com/doc/api?method=kdt.item.update>
     'kdt.item.update'
-  ]
+  ],
+  extend: require('./lib/extend')
 };
 
 /**
@@ -141,6 +142,16 @@ let kdt = function (
           'images[]',
           callback);
       });
+  });
+
+  Object.keys(api.extend).forEach(key => {
+    objectPath.set(
+      config,
+      key.replace('kdt.', ''),
+      function(apiParams, callback) {
+        return api.extend[key](config.config, apiParams, callback);
+      }
+    );
   });
   return config;
 };
