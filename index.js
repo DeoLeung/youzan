@@ -33,7 +33,9 @@ let api = {
     // 根据多个微信粉丝用户的openid或user_id获取用户信息：<http://open.koudaitong.com/doc/api?method=kdt.users.weixin.follower.gets>
     'kdt.users.weixin.follower.gets',
     // 查询微信粉丝用户列表信息：<http://open.koudaitong.com/doc/api?method=kdt.users.weixin.followers.get>
-    'kdt.users.weixin.followers.get'
+    'kdt.users.weixin.followers.get',
+    // 获取区域地名列表信息: <http://open.koudaitong.com/doc/api?method=kdt.regions.get>
+    'kdt.regions.get'
   ],
   postNull: [
     // 删除一个商品：<http://open.koudaitong.com/doc/api?method=kdt.item.delete>
