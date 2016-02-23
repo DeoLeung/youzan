@@ -11,7 +11,7 @@ It's not compatible with v0.1.4 and below, please update your code where necessa
 
 ## APIs
 
-See [有赞API文档](http://open.koudaitong.com/doc)
+See [Youzan API Doc](http://open.koudaitong.com/doc)
 
 ## Installation
 
@@ -19,7 +19,7 @@ See [有赞API文档](http://open.koudaitong.com/doc)
 $ npm install deo-youzan
 ```
 
-## Usage
+## General Usage
 ```js
 var youzan = require('deo-youzan');
 
@@ -34,7 +34,7 @@ var kdt = youzan(appid, appsecret);
 // Normally you can use it as the api 'method' in the API doc
 // e.g. method: kdt.trades.sold.get
 
-let params = {
+const params = {
   fields: 'tid,pay_time,created,trade_memo,receiver_mobile,orders',
   status: 'WAIT_SELLER_SEND_GOODS'
 }
@@ -48,11 +48,11 @@ kdt.trades.sold.get(params, function (error, response, body) {
 // Some may need extra files path parameter
 // e.g. method: kdt.item.add
 
-let params = {
+const params = {
   // ...
 }
 
-let filePaths = [
+const filePaths = [
   // ...
 ]
 
@@ -60,6 +60,13 @@ kdt.item.add(params, filePaths, function(err, res, body) {
   // ...
 });
 ```
+
+## Extend Usage
+
+Except the all the API in the official document, we provide some extend functions to ease the usage:
+
+***kdt.trades.sold.get.all***: This will grab all the trades matching the given param and return them as an Array. Since it contains multiple http requests, we default it to retry 3 times when failure encounted.
+
 ## License
 
 ![license](https://img.shields.io/npm/l/deo-youzan.svg)
