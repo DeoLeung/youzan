@@ -22,7 +22,6 @@ $ npm install deo-youzan
 ```
 
 ## General Usage
-----
 ### **Pull:**
 ```js
 var youzan = require('deo-youzan');
@@ -120,6 +119,5 @@ app.post('/', handler(kdt, function(req) {
 ```
 
 ## License
-____
 
 ![license](https://img.shields.io/npm/l/deo-youzan.svg)
