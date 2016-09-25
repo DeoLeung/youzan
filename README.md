@@ -1,5 +1,6 @@
 ![npm download](https://img.shields.io/npm/dt/deo-youzan.svg)
 ![npm version](https://img.shields.io/npm/v/deo-youzan.svg)
+![travis build](https://img.shields.io/travis/MadHouses/youzan.svg?label=travis)
 
 nodejs sdk(pull/push) for www.youzan.com (koudaitong)
 
