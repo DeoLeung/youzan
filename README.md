@@ -118,6 +118,11 @@ app.post('/', handler(kdt, function(req) {
 
 ```
 
+## testing
+```sh
+npm test
+```
+
 ## License
 
 ![license](https://img.shields.io/npm/l/deo-youzan.svg)
