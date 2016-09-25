@@ -15,12 +15,13 @@
   },
   "devDependencies": {
     "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
     "express": "^4.14.0",
     "express-validator": "^2.20.10",
-    "chai": "^3.5.0",
     "jshint": "*",
     "mocha": "*",
-    "nock": "*"
+    "nock": "*",
+    "superagent": "^2.3.0"
   },
   "repository": {
     "type": "git",
