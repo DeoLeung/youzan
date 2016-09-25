@@ -1,6 +1,4 @@
 'use strict';
-var webhook = require('../lib/webhook');
-var nock = require('nock');
 var assert = require('chai').assert;
 var superagent = require('superagent');
 
@@ -73,13 +71,11 @@ module.exports = () =>
     });
 
     it('correct request', done => {
-      let req = clone(push);
       superagent
         .post(WEBHOOK_URI)
-        .send(req)
+        .send(push)
         .set('Content-Type', 'application/json')
         .end(function(err, res) {
-          console.log(res.statusCode)
           assert.deepEqual(res.body, res_ok);
           done();
         });
