@@ -70,7 +70,6 @@ let api = {
 
 /**
  * 根据appid和appsecret创建API的构造函数
- * @param {String} proxy       公司内网需要设置代理
  * @param {String} appid       在有赞申请得到的appid
  * @param {String} appsecret   在有赞申请得到的appsecret
  * @param {String} format      （可选）指定响应格式。默认json,目前支持格式为json
