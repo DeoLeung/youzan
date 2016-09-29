@@ -1,6 +1,6 @@
 {
   "name": "deo-youzan",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "nodejs sdk for www.youzan.com",
   "main": "index.js",
   "scripts": {
